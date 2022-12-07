@@ -201,7 +201,7 @@ What’s important here is that you have a keen sense for what damage an unbalan
 
 * **Ensemble techniques**: Ensemble techniques use a combination of learning algorithms to optimize better predictive performance. They typically reduce overfitting in models and make the model more robust (unlikely to be influenced by small changes in the training data).
 
-## Q22: How do you ensure you’re not overfitting with a model?
+### Q22: How do you ensure you’re not overfitting with a model?
 This is a simple restatement of a fundamental problem in machine learning: the possibility of overfitting training data and carrying the noise of that data through to the test set, thereby providing inaccurate generalizations.
 
 There are three main methods to avoid overfitting:
@@ -211,74 +211,75 @@ There are three main methods to avoid overfitting:
    * k-folds cross-validation: https://machinelearningmastery.com/k-fold-cross-validation/   
 * Use regularization techniques such as LASSO that penalize certain model parameters if they’re likely to cause overfitting.
 
-## Q23: What evaluation approaches would you work to gauge the effectiveness of a machine learning model?
+### Q23: What evaluation approaches would you work to gauge the effectiveness of a machine learning model?
 1. Split the dataset into training and test sets/use cross-validation techniques to further segment the training and test sets 
 2. Implement a choice selection of performance metrics (ex. the F1 score, the accuracy, and the confusion matrix) 
    * Performance metrics: https://machinelearningmastery.com/classification-accuracy-is-not-enough-more-performance-measures-you-can-use/
 
-## Q24: How would you evaluate a logistic regression model?
+### Q24: How would you evaluate a logistic regression model?
 ![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
 Demonstrate an understanding of what the typical goals of a logistic regression are (classification, prediction, etc.) and bring up a few examples and use cases.
 
-## Q25: What’s the “kernel trick” and how is it useful?
+### Q25: What’s the “kernel trick” and how is it useful?
+![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
 
 # Machine Learning Interview Questions: Programming
 These machine learning interview questions test your knowledge of programming principles you need to implement machine learning principles in practice. Machine learning interview questions tend to be technical questions that test your logic and programming skills: this section focuses more on the latter.
 
-## Q26: How do you handle missing or corrupted data in a dataset?
+### Q26: How do you handle missing or corrupted data in a dataset?
+Drop the rows/columns (isnull(), dropna()) or replace with a different value (fillna())
 
-## Q27: Do you have experience with Spark or big data tools for machine learning?
+### *Q27: Do you have experience with Spark or big data tools for machine learning?
+![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
+### *Q28: Pick an algorithm. Write the pseudo-code for a parallel implementation.
+![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
 
-## Q28: Pick an algorithm. Write the pseudo-code for a parallel implementation.
+### Q29: What are some differences between a linked list and an array?
+![alt text](https://1.bp.blogspot.com/-SKU5oSgKyXg/V5DC9yymoMI/AAAAAAAABMo/farel9q9Uo0WZIOFLZ2Z_2gxbaXqdxoqwCLcB/s1600/array-linked%2Blist.PNG)
+### Q30: Describe a hash table.
+* **Hash Table**: a data structure that produces an associative array. A key is mapped to certain values through the use of a hash function. They are often used for tasks such as database indexing. It is an abstract data type that maps keys to values. A hash table uses a hash function to compute an index.
+*Example*
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/1920px-Hash_table_3_1_1_0_1_0_0_SP.svg.png)
+### Q31: *Which data visualization libraries do you use? What are your thoughts on the best data visualization tools?*
+Seaborn, Folium, PlyPlot, Matplotlib
+![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
+### Q32: *Given two strings, A and B, of the same length n, find whether it is possible to cut both strings at a common point such that the first part of A and the second part of B form a palindrome.*
+![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
+### Q33: How are primary and foreign keys related in SQL?
+* **Primary key**: consists of one or more columns whose data contained within are used to uniquely identify each row in the table
+* **Foreign key**: a set of one or more columns in a table that refers to the primary key in another table and provides a link between data in two tables
+![alt text](https://www.thecrazyprogrammer.com/wp-content/uploads/2019/04/Difference-between-Primary-Key-and-Foreign-Key-1024x672.gif)
+### Q34: How does XML and CSVs compare in terms of size?
+XML>CSV
+* **Extensible Markup Language (XML)**: a markup language and file format for storing, transmitting, and reconstructing arbitrary data.
+* **Comma-separated values (CSV) file**: a delimited text file that uses a comma to separate values. 
 
-## Q29: What are some differences between a linked list and an array?
+In practice, XML is much more verbose than CSVs are and takes up a lot more space. CSVs use some separators to categorize and organize data into neat columns. XML uses tags to delineate a tree-like structure for key-value pairs. You’ll often get XML back as a way to semi-structure data from APIs or HTTP responses. In practice, you’ll want to ingest XML data and try to process it into a usable CSV. This sort of question tests your familiarity with data wrangling sometimes messy data formats. 
 
-## Q30: Describe a hash table.
+### Q35: What are the data types supported by JSON? 
+There are six basic JSON (JavaScript Object Notation) datatypes you can manipulate: strings, numbers, objects, arrays, booleans, and null values. 
 
-## Q31: Which data visualization libraries do you use? What are your thoughts on the best data visualization tools?
-
-## Q32: Given two strings, A and B, of the same length n, find whether it is possible to cut both strings at a common point such that the first part of A and the second part of B form a palindrome.
-
-## Q33: How are primary and foreign keys related in SQL?
-
-## Q34: How does XML and CSVs compare in terms of size?
-
-## Q35: What are the data types supported by JSON? 
-
-## Q36: How would you build a data pipeline?
-
+### *Q36: How would you build a data pipeline?*
+![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
 # Machine Learning Interview Questions: Company/Industry Specific
 These machine learning interview questions deal with how to implement your general machine learning knowledge to a specific company’s requirements. You’ll be asked to create case studies and extend your knowledge of the company and industry you’re applying for with your machine learning skills.
-
-## Q37: What do you think is the most valuable data in our business? 
-
-## Q38: How would you implement a recommendation system for our company’s users?
-
-## Q39: How can we use your machine learning skills to generate revenue?
-
-## Q40: What do you think of our current data process?
+![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
+### *Q37: What do you think is the most valuable data in our business? 
+### Q38: How would you implement a recommendation system for our company’s users?
+### Q39: How can we use your machine learning skills to generate revenue?
+### Q40: What do you think of our current data process?
 
 # Machine Learning Interview Questions: General Machine Learning Interest
 This series of machine learning interview questions attempt to gauge your passion and interest in machine learning. The right answers will serve as a testament to your commitment to being a lifelong learner in machine learning.
-
-## Q41: What are the last machine learning papers you’ve read?
-
-## Q42: Do you have research experience in machine learning?
-
-## Q43: What are your favorite use cases of machine learning models?
-
-## Q44: How would you approach the “Netflix Prize” competition?
-
-## Q45: Where do you usually source datasets?
-
-## Q46: How do you think Google is training data for self-driving cars?
-
-## Q47: How would you simulate the approach AlphaGo took to beat Lee Sedol at Go?
-
-## Q48: What are your thoughts on GPT-3 and OpenAI’s model?
-
-## Q49: What models do you train for fun, and what GPU/hardware do you use?
-
-## Q50: What are some of your favorite APIs to explore? 
-
-## Q51: How do you think quantum computing will affect machine learning?
+![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
+### *Q41: What are the last machine learning papers you’ve read?
+### Q42: Do you have research experience in machine learning?
+### Q43: What are your favorite use cases of machine learning models?
+### Q44: How would you approach the “Netflix Prize” competition?
+### Q45: Where do you usually source datasets?
+### Q46: How do you think Google is training data for self-driving cars?
+### Q47: How would you simulate the approach AlphaGo took to beat Lee Sedol at Go?
+### Q48: What are your thoughts on GPT-3 and OpenAI’s model?
+### Q49: What models do you train for fun, and what GPU/hardware do you use?
+### Q50: What are some of your favorite APIs to explore? 
+### Q51: How do you think quantum computing will affect machine learning?
