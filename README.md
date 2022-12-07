@@ -6,7 +6,7 @@ Based on questions and answers from https://www.springboard.com/blog/data-scienc
 Machine learning interview questions about ML algorithms will test your grasp of the theory behind machine learning.
 
 ### Q1: What’s the trade-off between bias and variance?
-* __Bias-Variance Tradeoff__ balances the two--increasing one decreases the other. Finds the best model with the least amount of error.
+__Bias-Variance Tradeoff__ balances the two--increasing one decreases the other. Finds the best model with the least amount of error.
 * __Bias__ the difference between average predictions and true values
     * Are the changes between the model and reality due to the model not having enough data or is it due to undue influence on the model? 
     * *i.e. is the simplifying assumptions made by the model to make the target function easier to approximate.
@@ -58,8 +58,13 @@ Machine learning interview questions about ML algorithms will test your grasp of
    * More false negatives 
 * **Recall**: how many *relevant* elements are retrieved
    * More false positives 
+![alt text](https://static.wixstatic.com/media/6f3565_48ca6fb7925d46608e4845254dd2bd65~mv2.png)
 
 ### Q6: What is Bayes’ Theorem? How is it useful in a machine learning context
+The probability of an event, based on prior knowledge of conditions that might be related to the event
+* It lets you take the test results and correct for the “skew” introduced by false positives. You get the real chance of having the event
+
+![alt text](https://miro.medium.com/max/1400/1*CnoTGGO7XeUpUMeXDrIfvA.webp)
 
 ### Q7: Why is “Naive” Bayes naive?
 
