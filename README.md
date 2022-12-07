@@ -83,10 +83,6 @@ The main intuitive difference between the L1 and L2 regularization is that L1 re
    * L2 regularization forces weights toward zero but it *does not make them exactly zero.* L2 regularization acts like a force that removes a small percentage of weights at each iteration. Therefore, weights will never be equal to zero.
 ![alt text](https://miro.medium.com/max/1400/0*tATGj-F5jlQU80GE.webp)
 
-
-*https://towardsdatascience.com/l1-and-l2-regularization-explained-874c3b03f668*
-*https://medium.com/analytics-vidhya/l1-vs-l2-regularization-which-is-better-d01068e6658c*
-
 ![alt text](https://miro.medium.com/max/1100/1*-LydhQEDyg-4yy5hGEj5wA.webp)
 
 lambda value | alpha value | Result
@@ -95,11 +91,23 @@ lambda == 0 | alpha = any value | No regularization. alpha is ignored.
 lambda > 0 | alpha == 0 | Ridge Regression
 lambda > 0 | alpha == 1 | LASSO
 lambda > 0 | 0 < alpha < 1| Elastic Net Penalty
+
+**Good Sources**
+* *https://towardsdatascience.com/l1-and-l2-regularization-explained-874c3b03f668*
+* *https://medium.com/analytics-vidhya/l1-vs-l2-regularization-which-is-better-d01068e6658c*
 * Explination of regularization paramaters alpha and lambda: https://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/algo-params/lambda.html
 
+
 ### Q9: What’s your favorite algorithm, and can you explain it to me in less than a minute?
+![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
+Answer: Interviewers ask such machine learning interview questions to test your understanding of how to communicate complex and technical nuances with poise and the ability to summarize quickly and efficiently. While answering such questions, make sure you have a choice and ensure you can explain different algorithms so simply and effectively that a five-year-old could grasp the basics!
 
 ### Q10: What’s the difference between Type I and Type II error?
+* **Type I error**: is a false positive i.e. claiming something has happened when it hasn’t.
+   * Rejects a null hypothesis that is *true* in the population
+* **Type II error** is a false negative i.e. claiming nothing is happening when in fact something is.
+   * Accepts (fails to reject) a null hypothesis that is *false* in the population
+![alt text](https://static.wingify.com/gcp/uploads/sites/3/2020/12/type-1-and-type-2-errors.png?tr=w-1366)
 
 ### Q11: What’s a Fourier transform?
 
