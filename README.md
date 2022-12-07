@@ -39,16 +39,25 @@ Machine learning interview questions about ML algorithms will test your grasp of
 
 * **K-Nearest Neighbors** is a supervised classification algorithm
    * need labeled data you want to classify an unlabeled point into (thus the nearest neighbor part)
-![alt text](https://miro.medium.com/max/1400/0*34SajbTO2C5Lvigs.web)
+![alt text](https://miro.medium.com/max/1400/0*34SajbTO2C5Lvigs.webp)
          _https://medium.com/swlh/k-nearest-neighbor-ca2593d7a3c4_
 * **K-means clustering** is an unsupervised clustering algorithm
    * requires only a set of unlabeled points and a threshold: the algorithm will take unlabeled points and gradually learn how to cluster them into groups by computing the mean of the distance between different points
 ![alt text](https://lh5.googleusercontent.com/rhGbEMw6SBxZCarC2ewbhYIK9HbjMDWxcPbSx8MlAOoVp9jDaT5-vTLWyR7qiXlW3iBQ2GOty8HFPCVPTqtGPptuy4GVxbXH5ePvZP8IbVHtwfKb7iaCQQGuHiM3yVHuC24QO2cH)
 
-
 ### Q4: Explain how a ROC curve works.
+![alt text](https://upload.wikimedia.org/wikipedia/commons/1/13/Roc_curve.svg)
+
+* The ROC (receiver operating characteristic) curve is a graphical representation of the contrast between true positive rates and the false positive rate at various thresholds. It’s often used as a proxy for the trade-off between the sensitivity of the model (true positives) vs the fall-out or the probability it will trigger a false alarm (false positives).
+* Created by plotting the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings.
+
+![alt text](https://upload.wikimedia.org/wikipedia/commons/5/5a/Sensitivity_and_specificity_1.01.svg)
 
 ### Q5: Define precision and recall.
+* **Precision**: how *valid* the results are
+   * More false negatives 
+* **Recall**: how many *relevant* elements are retrieved
+   * More false positives 
 
 ### Q6: What is Bayes’ Theorem? How is it useful in a machine learning context
 
