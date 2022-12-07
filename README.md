@@ -67,8 +67,26 @@ The probability of an event, based on prior knowledge of conditions that might b
 ![alt text](https://miro.medium.com/max/1400/1*CnoTGGO7XeUpUMeXDrIfvA.webp)
 
 ### Q7: Why is “Naive” Bayes naive?
+**Naive Bayes classifiers** are a family of simple "probabilistic classifiers" based on applying Bayes' theorem with strong (naive) *independence assumptions* between the features 
+* As a Quora commenter put it whimsically, a Naive Bayes classifier that figured out that you liked pickles and ice cream would probably naively recommend you a pickle ice cream
+* Has applications ex. int text mining
 
 ### Q8: Explain the difference between L1 and L2 regularization.
+The main intuitive difference between the L1 and L2 regularization is that L1 regularization tries to estimate the median of the data while the L2 regularization tries to estimate the mean of the data to avoid overfitting.
+* **Regularization** controls the model complexity by penalizing higher terms in the model. If a regularization terms is added, the model tries to minimize both loss and complexity of model.
+* **Loss function** (cost/error function): a function that maps an event or values of one or more variables onto a real number intuitively representing some "cost" associated with the event. Many different types
+* **L1 regularization** (LASSO-least absolute shrinkage and selection operator-Regression): adds the “absolute value of magnitude” of the coefficient as a penalty term to the loss function
+   * **L1 regularization penalizes |weight|**
+   * L1 regularization forces the **weights** of uninformative features to be zero by substracting a small amount from the weight at each iteration and thus making the weight zero, eventually.
+* **L2 Regularization** (Ridge Regression): Ridge regression adds the “squared magnitude” of the coefficient as the penalty term to the loss function.
+   * **L2 regularization penalizes (weight)²**
+   * L2 regularization forces weights toward zero but it *does not make them exactly zero.* L2 regularization acts like a force that removes a small percentage of weights at each iteration. Therefore, weights will never be equal to zero.
+![alt text](https://miro.medium.com/max/1400/0*tATGj-F5jlQU80GE.webp)
+*https://towardsdatascience.com/l1-and-l2-regularization-explained-874c3b03f668*
+*https://medium.com/analytics-vidhya/l1-vs-l2-regularization-which-is-better-d01068e6658c*
+
+![alt text](https://miro.medium.com/max/1100/1*-LydhQEDyg-4yy5hGEj5wA.webp)
+* Explination of regularization paramaters alpha and lambda: https://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/algo-params/lambda.html
 
 ### Q9: What’s your favorite algorithm, and can you explain it to me in less than a minute?
 
