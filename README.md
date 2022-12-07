@@ -1,4 +1,4 @@
-# Process_of_solving_ML_Problems
+# Process of Solving ML Problems
 Assignment for Code Op.
 Based on questions and answers from https://www.springboard.com/blog/data-science/machine-learning-interview-questions/.
 
@@ -35,6 +35,16 @@ Machine learning interview questions about ML algorithms will test your grasp of
 * Dimensionality reduction: reducing the amount of random variables in a problem by obtaining a set of principal variables
 
 ### Q3: How is KNN different from k-means clustering?
+* KNN Algorithm is based on feature similarity and K-means refers to the division of objects into clusters (such that each object is in exactly one cluster, not several).
+
+* **K-Nearest Neighbors** is a supervised classification algorithm
+   * need labeled data you want to classify an unlabeled point into (thus the nearest neighbor part)
+![alt text](https://miro.medium.com/max/1400/0*34SajbTO2C5Lvigs.web)
+         _https://medium.com/swlh/k-nearest-neighbor-ca2593d7a3c4_
+* **K-means clustering** is an unsupervised clustering algorithm
+   * requires only a set of unlabeled points and a threshold: the algorithm will take unlabeled points and gradually learn how to cluster them into groups by computing the mean of the distance between different points
+![alt text](https://lh5.googleusercontent.com/rhGbEMw6SBxZCarC2ewbhYIK9HbjMDWxcPbSx8MlAOoVp9jDaT5-vTLWyR7qiXlW3iBQ2GOty8HFPCVPTqtGPptuy4GVxbXH5ePvZP8IbVHtwfKb7iaCQQGuHiM3yVHuC24QO2cH)
+
 
 ### Q4: Explain how a ROC curve works.
 
