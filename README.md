@@ -6,14 +6,13 @@ Based on questions and answers from https://www.springboard.com/blog/data-scienc
 Machine learning interview questions about ML algorithms will test your grasp of the theory behind machine learning.
 
 ### Q1: What’s the trade-off between bias and variance?
-* parameters to tune while training a ML model
+* __Bias-Variance Tradeoff__ balances the two--increasing one decreases the other. Finds the best model with the least amount of error.
 * __Bias__ the difference between average predictions and true values
     * Are the changes between the model and reality due to the model not having enough data or is it due to undue influence on the model? 
     * *i.e. is the simplifying assumptions made by the model to make the target function easier to approximate.
 * __Variance__ the variability of our predictions (how spread out your model predictions are)
     * If given more data does the model change or does it stay the same? 
     * *i.e. is the amount that the estimate of the target function will change, given different training data.
-![alt text](https://i.stack.imgur.com/qxbLf.png)
 * __Underfitting__ (overly simplistic) 
     * the model has a bias problem
     * underfits
@@ -22,36 +21,42 @@ Machine learning interview questions about ML algorithms will test your grasp of
     * the model has too much variance
     * models the noise from the input data
     * low error on the training data and high on the test
-* __Bias-Variance Tradeoff__ balances the two--increasing one decreases the other. 
-
 ![alt text](https://scontent-iad3-1.xx.fbcdn.net/v/t1.6435-9/189902238_306440417637742_8564280170340073765_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9267fe&_nc_ohc=VxIKKACl4lUAX9LEWcR&_nc_ht=scontent-iad3-1.xx&oh=00_AfCOLQr-O3CWGnBLahuCmGEONvoK8lGnf-nNadGkgn1hYg&oe=63B850BD)
 
 
 ### Q2: What is the difference between supervised and unsupervised machine learning?
+* **Supervised learning** includes the correct results (targets) during training
+    * precategorized data
+* **Unsupervised learning** does not include the correct result during the training phase
+![alt text](https://miro.medium.com/max/1030/1*zWBYt9DQQEf_XxXWLA2tzQ.webp)
+* Classification: target is discrete (binary or categorical)
+* Regression: target is con't and numerical
+* Clustering: grouping unlabeled examples
+* Dimensionality reduction: reducing the amount of random variables in a problem by obtaining a set of principal variables
 
 ### Q3: How is KNN different from k-means clustering?
 
-## Q4: Explain how a ROC curve works.
+### Q4: Explain how a ROC curve works.
 
-## Q5: Define precision and recall.
+### Q5: Define precision and recall.
 
-## Q6: What is Bayes’ Theorem? How is it useful in a machine learning context
+### Q6: What is Bayes’ Theorem? How is it useful in a machine learning context
 
-## Q7: Why is “Naive” Bayes naive?
+### Q7: Why is “Naive” Bayes naive?
 
-## Q8: Explain the difference between L1 and L2 regularization.
+### Q8: Explain the difference between L1 and L2 regularization.
 
-## Q9: What’s your favorite algorithm, and can you explain it to me in less than a minute?
+### Q9: What’s your favorite algorithm, and can you explain it to me in less than a minute?
 
-## Q10: What’s the difference between Type I and Type II error?
+### Q10: What’s the difference between Type I and Type II error?
 
-## Q11: What’s a Fourier transform?
+### Q11: What’s a Fourier transform?
 
-## Q12: What’s the difference between probability and likelihood?
+### Q12: What’s the difference between probability and likelihood?
 
-## Q13: What is deep learning, and how does it contrast with other machine learning algorithms?
+### Q13: What is deep learning, and how does it contrast with other machine learning algorithms?
 
-## Q14: What’s the difference between a generative and discriminative model?
+### Q14: What’s the difference between a generative and discriminative model?
 
 ## Q15: What cross-validation technique would you use on a time series dataset?
 
