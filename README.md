@@ -82,10 +82,19 @@ The main intuitive difference between the L1 and L2 regularization is that L1 re
    * **L2 regularization penalizes (weight)²**
    * L2 regularization forces weights toward zero but it *does not make them exactly zero.* L2 regularization acts like a force that removes a small percentage of weights at each iteration. Therefore, weights will never be equal to zero.
 ![alt text](https://miro.medium.com/max/1400/0*tATGj-F5jlQU80GE.webp)
+
+
 *https://towardsdatascience.com/l1-and-l2-regularization-explained-874c3b03f668*
 *https://medium.com/analytics-vidhya/l1-vs-l2-regularization-which-is-better-d01068e6658c*
 
 ![alt text](https://miro.medium.com/max/1100/1*-LydhQEDyg-4yy5hGEj5wA.webp)
+
+lambda value | alpha value | Result
+--- | --- | ---
+lambda == 0 | alpha = any value | No regularization. alpha is ignored.
+lambda > 0 | alpha == 0 | Ridge Regression
+lambda > 0 | alpha == 1 | LASSO
+lambda > 0 | 0 < alpha < 1| Elastic Net Penalty
 * Explination of regularization paramaters alpha and lambda: https://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/algo-params/lambda.html
 
 ### Q9: What’s your favorite algorithm, and can you explain it to me in less than a minute?
