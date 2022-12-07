@@ -174,11 +174,14 @@ Fold 5 : training [1 2 3 4 5], test [6]
    * Reduced error pruning is perhaps the simplest version: replace each node. If it doesn’t decrease predictive accuracy, keep it pruned. While simple, this heuristic actually comes pretty close to an approach that would optimize for maximum accuracy.
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/2/23/Before_after_pruning.png)
 ### Q17: Which is more important to you: model accuracy or model performance?
-* **Model performance**:
-* **Model accuracy**:
+* **Accuracy paradox**: the paradoxical finding that accuracy (proportion of correctness) is not a good metric for predictive models when classifying in predictive analytics (because a simple model may have a high level of accuracy but be too crude to be useful). Precision and recall are better measures in such cases.
+* Model accuracy is only a subset of model performance, and at that, a sometimes misleading one.
 
 ### Q18: What’s the F1 score? How would you use it?
+The harmonic mean between precision and recall. A classification metric that combines both recall and precision. The closer to 1 the better.
+![alt text](https://hasty.ai/media/pages/docs/mp-wiki/metrics/f-beta-score/55c23cb495-1654855011/snimok-ekrana-2022-06-10-v-12-51-17.webp)
 
+*Helpful Link*: https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/
 ### Q19: How would you handle an imbalanced dataset?
 
 ### Q20: When should you use classification over regression?
