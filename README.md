@@ -59,6 +59,7 @@ __Bias-Variance Tradeoff__ balances the two--increasing one decreases the other.
 * **Recall**: how many *relevant* elements are retrieved
    * More false positives 
 ![alt text](https://static.wixstatic.com/media/6f3565_48ca6fb7925d46608e4845254dd2bd65~mv2.png)
+*N.B. the bottom chart is a confusion matrix*
 
 ### Q6: What is Bayes’ Theorem? How is it useful in a machine learning context
 The probability of an event, based on prior knowledge of conditions that might be related to the event
@@ -96,7 +97,6 @@ lambda > 0 | 0 < alpha < 1| Elastic Net Penalty
 * *https://towardsdatascience.com/l1-and-l2-regularization-explained-874c3b03f668*
 * *https://medium.com/analytics-vidhya/l1-vs-l2-regularization-which-is-better-d01068e6658c*
 * Explination of regularization paramaters alpha and lambda: https://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/algo-params/lambda.html
-
 
 ### Q9: What’s your favorite algorithm, and can you explain it to me in less than a minute?
 ![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
@@ -180,20 +180,45 @@ Fold 5 : training [1 2 3 4 5], test [6]
 ### Q18: What’s the F1 score? How would you use it?
 The harmonic mean between precision and recall. A classification metric that combines both recall and precision. The closer to 1 the better.
 ![alt text](https://hasty.ai/media/pages/docs/mp-wiki/metrics/f-beta-score/55c23cb495-1654855011/snimok-ekrana-2022-06-10-v-12-51-17.webp)
+### Q19: How would you handle an imbalanced dataset?
+![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
+Answer: An imbalanced dataset is when you have, for example, a classification test and 90% of the data is in one class. That leads to problems: an accuracy of 90% can be skewed if you have no predictive power on the other category of data! Here are a few tactics to get over the hump:
+
+Collect more data to even the imbalances in the dataset.
+Resample the dataset to correct for imbalances.
+Try a different algorithm altogether on your dataset.
+What’s important here is that you have a keen sense for what damage an unbalanced dataset can cause, and how to balance that.
 
 *Helpful Link*: https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/
-### Q19: How would you handle an imbalanced dataset?
 
 ### Q20: When should you use classification over regression?
+* **Classification**: Output is discrete and has categorical/class labels
+* **Regression**: Output is continuous and numerical
 
-## Q21: Name an example where ensemble techniques might be useful.
+### Q21: Name an example where ensemble techniques might be useful.
+![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
+**NEED EXAMPLES OF TYPES OF THESE TECHNIQUES AND HOW THEY WORK**
 
+* **Ensemble techniques**: Ensemble techniques use a combination of learning algorithms to optimize better predictive performance. They typically reduce overfitting in models and make the model more robust (unlikely to be influenced by small changes in the training data).
 
 ## Q22: How do you ensure you’re not overfitting with a model?
+This is a simple restatement of a fundamental problem in machine learning: the possibility of overfitting training data and carrying the noise of that data through to the test set, thereby providing inaccurate generalizations.
+
+There are three main methods to avoid overfitting:
+
+* Keep the model simpler: reduce variance by taking into account fewer variables and parameters, thereby removing some of the noise in the * training data.
+* Use cross-validation techniques such as k-folds cross-validation.
+   * k-folds cross-validation: https://machinelearningmastery.com/k-fold-cross-validation/   
+* Use regularization techniques such as LASSO that penalize certain model parameters if they’re likely to cause overfitting.
 
 ## Q23: What evaluation approaches would you work to gauge the effectiveness of a machine learning model?
+1. Split the dataset into training and test sets/use cross-validation techniques to further segment the training and test sets 
+2. Implement a choice selection of performance metrics (ex. the F1 score, the accuracy, and the confusion matrix) 
+   * Performance metrics: https://machinelearningmastery.com/classification-accuracy-is-not-enough-more-performance-measures-you-can-use/
 
 ## Q24: How would you evaluate a logistic regression model?
+![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
+Demonstrate an understanding of what the typical goals of a logistic regression are (classification, prediction, etc.) and bring up a few examples and use cases.
 
 ## Q25: What’s the “kernel trick” and how is it useful?
 
