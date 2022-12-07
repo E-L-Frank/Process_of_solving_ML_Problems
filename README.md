@@ -130,18 +130,26 @@ A Fourier transform (FT) is a mathematical transform that decomposes functions i
 
 ### Q12: What’s the difference between probability and likelihood?
 **Probability** 
+
 Probability = P(data| distribution)-->measures how probable the data come from the specific distribution
    * Measures the fitness of data given a specific distribution
    * Probability is used to estimate how probable a sample or groups of samples are from a distribution based on a given distribution.
    * Probability refers to the area under curve on the distribution curve. The higher the value, the more probable that the data come from this distribution.  
+
 **Likelihood**
+
 Likelihood = L(distribution| data)-->measures how probable a specific distribution fits the given data
    * Measures the fitness of a model given some data (i.e. how well a model fits the data)
    * refers to a specific point on the distribution curve
    * The lower the likelihood, the worse the model fits the data.
 ![alt text](https://miro.medium.com/max/1400/1*pKLjnStE9odh6oePDoLCdA.webp)
 ### Q13: What is deep learning, and how does it contrast with other machine learning algorithms?
-
+* **Neural Network**: Composed of node layers (1 input, 1 or more hidden layers, and 1 out put). Each node connects to another and has an associated model with four main components (inputs, weights, a bias or threshold, and an output). Supposed to mimic human brains (as if the nodes were neurons).
+![alt text](https://1.cms.s81c.com/sites/default/files/2021-01-06/ICLH_Diagram_Batch_01_03-DeepNeuralNetwork-WHITEBG.png)
+*Helful link*: https://www.ibm.com/in-en/cloud/learn/neural-networks
+* **Deep learning**: A subset of machine learning-->a neural network with three or more layers.
+   * The "deep" in deep learning refers to the depth of layers in a neural network 
+![alt text](https://1.cms.s81c.com/sites/default/files/2021-04-22/Russian%20Nesting%20Dolls.png)
 ### Q14: What’s the difference between a generative and discriminative model?
 
 ### Q15: What cross-validation technique would you use on a time series dataset?
