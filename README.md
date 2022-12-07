@@ -5,11 +5,16 @@ Based on questions and answers from https://www.springboard.com/blog/data-scienc
 # Machine Learning Interview Questions: Algorithms/Theory
 Machine learning interview questions about ML algorithms will test your grasp of the theory behind machine learning.
 
-## Q1: What’s the trade-off between bias and variance?
+### Q1: What’s the trade-off between bias and variance?
+* parameters to tune while training a ML model
+* __Bias__ is the simplifying assumptions made by the model to make the target function easier to approximate.
+* __Variance__ is the amount that the estimate of the target function will change, given different training data.
+![alt text](https://i.stack.imgur.com/qxbLf.png)
 
-## Q2: What is the difference between supervised and unsupervised machine learning?
 
-## Q3: How is KNN different from k-means clustering?
+### Q2: What is the difference between supervised and unsupervised machine learning?
+
+### Q3: How is KNN different from k-means clustering?
 
 ## Q4: Explain how a ROC curve works.
 
