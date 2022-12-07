@@ -151,12 +151,31 @@ Likelihood = L(distribution| data)-->measures how probable a specific distributi
    * The "deep" in deep learning refers to the depth of layers in a neural network 
 ![alt text](https://1.cms.s81c.com/sites/default/files/2021-04-22/Russian%20Nesting%20Dolls.png)
 ### Q14: What’s the difference between a generative and discriminative model?
-
+* **Generative model**: learns *categories* of data
+* **Discriminative model**: learns the *distinction* between different categories of data *Discriminative models will generally outperform generative models on classification tasks*
+![alt text](https://d2mk45aasx86xg.cloudfront.net/Supervised_Learning_Cheatsheet_290e086e75.webp)
 ### Q15: What cross-validation technique would you use on a time series dataset?
+![alt text](https://miro.medium.com/max/1400/1*EWl_Flr1FKtD42270Iosog.webp)
+Answer: Instead of using standard k-folds cross-validation, you have to pay attention to the fact that a time series is not randomly distributed data—it is inherently ordered by chronological order. If a pattern emerges in later time periods, for example, your model may still pick up on it even if that effect doesn’t hold in earlier years!
+
+You’ll want to do something like forward chaining where you’ll be able to model on past data then look at forward-facing data.
+
+Fold 1 : training [1], test [2]
+Fold 2 : training [1 2], test [3]
+Fold 3 : training [1 2 3], test [4]
+Fold 4 : training [1 2 3 4], test [5]
+Fold 5 : training [1 2 3 4 5], test [6]
 
 ### Q16: How is a decision tree pruned?
-
+* **Decision Tree**: a flowchart-like structure in which each internal node represents a "test" on an attribute (e.g. whether a coin flip comes up heads or tails), each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes). The paths from root to leaf represent classification rules.
+![alt text](https://static.javatpoint.com/tutorial/machine-learning/images/decision-tree-classification-algorithm.png)
+* **Pruning**: remove branches (nodes/neurons) that aren't critical/ are redundant in order to increase the accuracy and reduce the complexity of the model.
+   * Pruning can happen bottom-up and top-down
+   * Reduced error pruning is perhaps the simplest version: replace each node. If it doesn’t decrease predictive accuracy, keep it pruned. While simple, this heuristic actually comes pretty close to an approach that would optimize for maximum accuracy.
+![alt text](https://upload.wikimedia.org/wikipedia/commons/2/23/Before_after_pruning.png)
 ### Q17: Which is more important to you: model accuracy or model performance?
+* **Model performance**:
+* **Model accuracy**:
 
 ### Q18: What’s the F1 score? How would you use it?
 
