@@ -7,9 +7,24 @@ Machine learning interview questions about ML algorithms will test your grasp of
 
 ### Q1: What’s the trade-off between bias and variance?
 * parameters to tune while training a ML model
-* __Bias__ is the simplifying assumptions made by the model to make the target function easier to approximate.
-* __Variance__ is the amount that the estimate of the target function will change, given different training data.
+* __Bias__ the difference between average predictions and true values
+    * Are the changes between the model and reality due to the model not having enough data or is it due to undue influence on the model? 
+    * *i.e. is the simplifying assumptions made by the model to make the target function easier to approximate.
+* __Variance__ the variability of our predictions (how spread out your model predictions are)
+    * If given more data does the model change or does it stay the same? 
+    * *i.e. is the amount that the estimate of the target function will change, given different training data.
 ![alt text](https://i.stack.imgur.com/qxbLf.png)
+* __Underfitting__ (overly simplistic) 
+    * the model has a bias problem
+    * underfits
+    * high error on both test and train data
+* __Overfitting__ (too complicated) 
+    * the model has too much variance
+    * models the noise from the input data
+    * low error on the training data and high on the test
+* __Bias-Variance Tradeoff__ balances the two--increasing one decreases the other. 
+
+![alt text](https://scontent-iad3-1.xx.fbcdn.net/v/t1.6435-9/189902238_306440417637742_8564280170340073765_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9267fe&_nc_ohc=VxIKKACl4lUAX9LEWcR&_nc_ht=scontent-iad3-1.xx&oh=00_AfCOLQr-O3CWGnBLahuCmGEONvoK8lGnf-nNadGkgn1hYg&oe=63B850BD)
 
 
 ### Q2: What is the difference between supervised and unsupervised machine learning?
