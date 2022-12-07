@@ -110,24 +110,42 @@ Answer: Interviewers ask such machine learning interview questions to test your 
 ![alt text](https://static.wingify.com/gcp/uploads/sites/3/2020/12/type-1-and-type-2-errors.png?tr=w-1366)
 
 ### Q11: What’s a Fourier transform?
+A Fourier transform (FT) is a mathematical transform that decomposes functions into frequency components, which are represented by the output of the transform as a function of frequency.
+   * The Fourier Transform takes a specific viewpoint: What if any signal could be filtered into a bunch of circular paths?
+   * Converts a function in the amplitude vs. time (f(t)) domain to the amplitude vs. frequency domain (F(w))
+#### Example
+![alt text](https://insightincmiami.org/wp-content/uploads/2019/06/fourier-transform-car-engine-example.jpg)
+#### Math
+![alt text](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/images/fourier-explained-20121219-224649.png.webp)
+* N = number of time samples we have
+* n = current sample we're considering (0 .. N-1)
+* xn = value of the signal at time n
+* k = current frequency we're considering (0 Hertz up to N-1 Hertz)
+* Xk = amount of frequency k in the signal (amplitude and phase, a complex number)
+* The 1/N factor is usually moved to the reverse transform (going from frequencies back to time). This is allowed, though I prefer 1/N in the forward transform since it gives the actual sizes for the time spikes. You can get wild and even use  on both transforms (going forward and back creates the 1/N factor).
+* n/N is the percent of the time we've gone through. 2 * pi * k is our speed in radians / sec. e^-ix is our backwards-moving circular path. The combination is how far we've moved, for this speed and time.
+* The raw equations for the Fourier Transform just say "add the complex numbers". Many programming languages cannot handle complex numbers directly, so you convert everything to rectangular coordinates and add those.
+
+**Amazing website**: https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/
 
 ### Q12: What’s the difference between probability and likelihood?
+* **Probability** is the 
 
 ### Q13: What is deep learning, and how does it contrast with other machine learning algorithms?
 
 ### Q14: What’s the difference between a generative and discriminative model?
 
-## Q15: What cross-validation technique would you use on a time series dataset?
+### Q15: What cross-validation technique would you use on a time series dataset?
 
-## Q16: How is a decision tree pruned?
+### Q16: How is a decision tree pruned?
 
-## Q17: Which is more important to you: model accuracy or model performance?
+### Q17: Which is more important to you: model accuracy or model performance?
 
-## Q18: What’s the F1 score? How would you use it?
+### Q18: What’s the F1 score? How would you use it?
 
-## Q19: How would you handle an imbalanced dataset?
+### Q19: How would you handle an imbalanced dataset?
 
-## Q20: When should you use classification over regression?
+### Q20: When should you use classification over regression?
 
 ## Q21: Name an example where ensemble techniques might be useful.
 
