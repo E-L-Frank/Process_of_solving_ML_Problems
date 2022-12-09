@@ -168,6 +168,7 @@ Fold 5 : training [1 2 3 4 5], test [6]
 
 ### Q16: How is a decision tree pruned?
 * **Decision Tree**: a flowchart-like structure in which each internal node represents a "test" on an attribute (e.g. whether a coin flip comes up heads or tails), each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes). The paths from root to leaf represent classification rules.
+* A nonlinear ML model that can be very interpretable
 ![alt text](https://static.javatpoint.com/tutorial/machine-learning/images/decision-tree-classification-algorithm.png)
 * **Pruning**: remove branches (nodes/neurons) that aren't critical/ are redundant in order to increase the accuracy and reduce the complexity of the model.
    * Pruning can happen bottom-up and top-down
